@@ -1,11 +1,16 @@
 import React from 'react';
-import LogoImg from '../../assets/logo.png';
+
+import logo from '../../assets/logo.png'
+import { Link } from 'react-router';
+
 const Logo = () => {
     return (
-        <div className='flex  items-end'>
-            <img src={LogoImg} alt="Logo" />
-            <span className="text-3xl font-bold -ml-2">zapShift</span>
-        </div>
+        <Link to="/">
+            <div className='flex items-end'>
+                <img src={logo} alt="" />
+                <h3 className="text-3xl font-bold -ms-2.5">zapShift</h3>
+            </div>
+        </Link>
     );
 };
 
